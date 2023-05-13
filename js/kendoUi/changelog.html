@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Changelog for Kendo UI Professional v2022.3.1109 (Wed Nov 09 2022)</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: .75em/1.5 Tahoma, sans-serif;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            font-size: normal;
+        }
+
+        h2 {
+            font-size: 2em;
+            font-weight: normal;
+            margin: 1.2em 0 .3em;
+            padding-bottom: .2em;
+        }
+
+        .breaking {
+            background-color: #e10c01;
+            color: #fff;
+            border-radius: 3px;
+            padding: 3px 4px;
+            display: inline-block;
+            font-size: 11px;
+            line-height: 1;
+            font-weight: bold;
+        }
+
+        #page {
+            width: 50em;
+            margin: 0 auto 2em;
+            border-radius: 0 0 1em 1em;
+            box-shadow: 0 0 10px #ccc;
+            padding: 1em 2em 2em;
+        }
+
+        .poBoxIcon {
+            float: left;
+            font-size: 2em;
+            margin: 1.2em .5em 0 0;
+        }
+
+        .poTopLine {
+            border-top: 2px solid #e1e1e1;
+            margin: 17px 0 40px 0;
+        }
+    </style>
+    <base href="https://www.telerik.com/support/whats-new/kendo-ui-web/release-history">
+</head>
+
+<body>
+    <div id="page">
+        <h1 class="title">Release notes</h1>
+        <div class="tClear poTopLine"></div>
+        <h1>Common</h1>
+        <div class="tClear poTopLine">
+            <div class="poBoxIconText">
+                <p><strong>What's new</strong></p>
+                <ul>
+                    <li>Fluent Theme Package <a href="https://github.com/telerik/kendo-themes/blob/master/packages/fluent/CHANGELOG.md#5100-2022-10-21"> (v5.10.0) </a></li>
+                    <li>Classic Theme Package <a href="https://github.com/telerik/kendo-themes/blob/master/packages/classic/CHANGELOG.md#5100-2022-10-21"> (v5.10.0) </a></li>
+                    <li>Bootstrap Theme Package <a href="https://github.com/telerik/kendo-themes/blob/master/packages/bootstrap/CHANGELOG.md#5100-2022-10-21"> (v5.10.0) </a></li>
+                    <li>Default Theme Package <a href="https://github.com/telerik/kendo-themes/blob/master/packages/default/CHANGELOG.md#5100-2022-10-21"> (v5.10.0) </a></li>
+                    <li>Material Theme Package <a href="https://github.com/telerik/kendo-themes/blob/master/packages/material/CHANGELOG.md#5100-2022-10-21"> (v5.10.0) </a></li>
+                </ul>
+                <p><strong>What's fixed</strong></p>
+                <ul>
+                    <li>Unresolved dependencies in kendo.aspnetmvc.min.js when using RequireJS <a href="https://github.com/telerik/kendo-ui-core/issues/7065">(#7065)</a></li>
+                    <li>dataSource.query causes Javascript Error "Cannot read properties of undefined (reading 'length')" <a href="https://github.com/telerik/kendo-ui-core/issues/7043">(#7043)</a></li>
+                    <li>Webpack 4 and latest kendo version throws an error <a href="https://github.com/telerik/kendo-ui-core/issues/7012">(#7012)</a></li>
+                    <li>Kendo UI Core nmp package contains Webpack manifests, instead of only the actual source code <a href="https://github.com/telerik/kendo-ui-core/issues/4801">(#4801)</a></li>
+                </ul>
+            </div>
+        </div>
+        <h1>New components</h1>
+        <div class="tClear poTopLine">
+            <div class="poBoxIconText">
+                <h2>TimeDurationPicker Component</h2>
+            </div>
+        </div>
+        <h1>Features and Updates</h1>
+        <div class="tClear poTopLine">
+            <h2>AutoComplete</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>Floating label support</li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Calendar</h2>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>Calendar week column incorrect number <a href="https://github.com/telerik/kendo-ui-core/issues/6298">(#6298)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Chart</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>Add Subtitle Property to Charts</li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Chat</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>Chat accessibility improvements</li>
+            </ul>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>Chat incorrect message bubble background color in the Bootstrap theme <a href="https://github.com/telerik/kendo-ui-core/issues/4829">(#4829)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>ComboBox</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>Floating label support</li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>DateInput</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>Floating label support</li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>DatePicker</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>Floating label support</li>
+            </ul>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>The setOptions method enables disabled datepicker <a href="https://github.com/telerik/kendo-ui-core/issues/6885">(#6885)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>DateTimePicker</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>Floating label support</li>
+            </ul>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>Calendar in the DatePicker popup is cut</li>
+                <li>The close event of a DateTimePicker with componentType: modern does not provide reference to the view <a href="https://github.com/telerik/kendo-ui-core/issues/7093">(#7093)</a></li>
+                <li>DateTimePicker: new focus class not respected by LESS themes <a href="https://github.com/telerik/kendo-ui-core/issues/6789">(#6789)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>DropDownList</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>Floating label support</li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>DropDownTree</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>Floating label support</li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Editor</h2>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>Editor with semantic false removes background-color <a href="https://github.com/telerik/kendo-ui-core/issues/7091">(#7091)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Gantt</h2>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>Gantt in RTL planned duration line enters the start moment circle</li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Grid</h2>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>The Change event of the Grid is not working with header checkbox click <a href="https://github.com/telerik/kendo-ui-core/issues/7072">(#7072)</a></li>
+                <li>Checkbox selection for all rows not firing Grid's change event <a href="https://github.com/telerik/kendo-ui-core/issues/7066">(#7066)</a></li>
+                <li>Grid - setting a title attribute through the headerAttributes does not have any effect <a href="https://github.com/telerik/kendo-ui-core/issues/7052">(#7052)</a></li>
+                <li>Grid's headers break upon ungrouping when the filterable mode is set to "row" <a href="https://github.com/telerik/kendo-ui-core/issues/7049">(#7049)</a></li>
+                <li>Non-navigatable Grid has role=grid applied <a href="https://github.com/telerik/kendo-ui-core/issues/7045">(#7045)</a></li>
+                <li>The Grid filter renders an anchor tag without role=button <a href="https://github.com/telerik/kendo-ui-core/issues/6997">(#6997)</a></li>
+                <li>Check or uncheck the selectable column in Grid affects all checkboxes in the row <a href="https://github.com/telerik/kendo-ui-core/issues/6983">(#6983)</a></li>
+                <li>Adding a new record to filtered and grouped Grid throws an error <a href="https://github.com/telerik/kendo-ui-core/issues/6981">(#6981)</a></li>
+                <li>setOptions method throws an error when rows reordering is enabled <a href="https://github.com/telerik/kendo-ui-core/issues/6961">(#6961)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>ListBox</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>ListBox accessibility improvements</li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Map</h2>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>Map custom markers are not positioned correctly when zoom out using LESS themes <a href="https://github.com/telerik/kendo-ui-core/issues/6641">(#6641)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Menu</h2>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>With SASS themes used, Menu append method replaces the parent item instead of appending the new item as child <a href="https://github.com/telerik/kendo-ui-core/issues/7054">(#7054)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>MultiColumnComboBox</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>Floating label support</li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>MultiSelect</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>Floating label support</li>
+            </ul>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>MultiSelect - variable @chip-solid-hover-text not used by LESS themes <a href="https://github.com/telerik/kendo-ui-core/issues/6788">(#6788)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Notification</h2>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>Hide event is fired multiple times when "appendTo" is configured in Notification <a href="https://github.com/telerik/kendo-ui-core/issues/7079">(#7079)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>NumericTextBox</h2>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>NumericTextBox setOptions method breaks the spinner buttons functionality <a href="https://github.com/telerik/kendo-ui-core/issues/7021">(#7021)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Scheduler</h2>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>When selectable: true is set for Year view, selecting a slot using the mouse throws an error</li>
+                <li>Recurring events are not displayed correctly when the event starts at 21h <a href="https://github.com/telerik/kendo-ui-core/issues/6991">(#6991)</a></li>
+                <li>RTL Scheduler displays the wrong arrows in Timeline views for events that span outside the business hours <a href="https://github.com/telerik/kendo-ui-core/issues/4202">(#4202)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>ScrollView</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>ScrollView accessibility enhancements</li>
+            </ul>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>ScrollView rendering changes</li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Signature</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>Signature accessibility improvements</li>
+            </ul>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>NPM Package throws an error due to the presence of Signature <a href="https://github.com/telerik/kendo-ui-core/issues/7082">(#7082)</a></li>
+                <li>When Signature is resized by using setOptions the drawing is broken <a href="https://github.com/telerik/kendo-ui-core/issues/7050">(#7050)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Spreadsheet</h2>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>Spreadsheet throws a JavaScript error on horizontal scrolling of frozen panes</li>
+                <li>Missing separator before FontSize, FontFamily and Format tools</li>
+                <li>Spreadsheet - RANK Order Parameter Ignored <a href="https://github.com/telerik/kendo-ui-core/issues/6992">(#6992)</a></li>
+                <li>Spreadsheet does parse dates correctly and do not preserve date format on paste <a href="https://github.com/telerik/kendo-ui-core/issues/6925">(#6925)</a></li>
+                <li>Spreadsheet wrong rounding and formatting <a href="https://github.com/telerik/kendo-ui-core/issues/6879">(#6879)</a></li>
+                <li>Spreadsheet throws error when opening a xlsx file containing diagonal borders <a href="https://github.com/telerik/kendo-ui-core/issues/6365">(#6365)</a></li>
+                <li>Unable to export Spreadsheet to PDF due to JS error when color is not applied to cell border <a href="https://github.com/telerik/kendo-ui-core/issues/6190">(#6190)</a></li>
+                <li>The sheets.sort property does not sort the column <a href="https://github.com/telerik/kendo-ui-core/issues/5945">(#5945)</a></li>
+                <li>Imported in the Spreadsheet Excel file that contains a Shape cannot be exported to xlsx <a href="https://github.com/telerik/kendo-ui-core/issues/5517">(#5517)</a></li>
+                <li>Dates not properly pasted when they are copied from Excel while displayed as hash tags #### <a href="https://github.com/telerik/kendo-ui-core/issues/5277">(#5277)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Switch</h2>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>Incorrect Switch thumb position in LESS Bootstrap and Material themes <a href="https://github.com/telerik/kendo-ui-core/issues/7046">(#7046)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>TextBox</h2>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>FloatingLabel does not work in the latest version <a href="https://github.com/telerik/kendo-ui-core/issues/7048">(#7048)</a></li>
+                <li>The TextBox floating label overlaps the field when setting value programmatically <a href="https://github.com/telerik/kendo-ui-core/issues/6841">(#6841)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>TimePicker</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>Floating label support</li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>ToolBar</h2>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>Unable to check Checkbox inside a ToolBar <a href="https://github.com/telerik/kendo-ui-core/issues/7095">(#7095)</a></li>
+                <li>Upload in ToolBar does not work <a href="https://github.com/telerik/kendo-ui-core/issues/7044">(#7044)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>Tooltip</h2>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>Tooltip callout low visibility in Blue Opal, Default, Nova, Silver and Uniform LESS themes <a href="https://github.com/telerik/kendo-ui-core/issues/6134">(#6134)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>TreeList</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>Unify TreeList and Grid events <a href="https://github.com/telerik/kendo-ui-core/issues/7030">(#7030)</a></li>
+            </ul>
+        </div>
+        <div class="tClear poTopLine">
+            <h2>TreeView</h2>
+            <p><strong>What's new</strong></p>
+            <ul>
+                <li>Enhance performance for large data sets - remove aria-level and aria-setsize attributes as they can be inferred from DOM <a href="https://github.com/telerik/kendo-ui-core/issues/7067">(#7067)</a></li>
+            </ul>
+            <p><strong>What's fixed</strong></p>
+            <ul>
+                <li>TreeView autoScroll feature does not work</li>
+                <li>TreeView's bottom nodes should not have the aria-expanded attribute. <a href="https://github.com/telerik/kendo-ui-core/issues/7038">(#7038)</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

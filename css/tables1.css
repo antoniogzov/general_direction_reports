@@ -1,0 +1,187 @@
+/*.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+.fl-table thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}*/
+
+/* Responsive */
+
+/*@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before {
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child {
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;s
+        text-align: center;
+    }
+}*/
+
+/*--- --- ---*/
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
+    .td-hd-600 {
+        display: none !important;
+    }
+}
+/* --- CSS PARA CARDS SELECT --- */
+
+.active-cd-slct {
+    border-color: #28a745 !important;
+    background-color: #f2f2f2;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.card-slct {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15), 0 2px 5px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/* CSS PARA EVITAR QUE SE AGREGUE UN PADDING AL CERRAR UN MODAL*/
+
+body {
+    padding-right: 0 !important
+}
+/* --- CSS PARA AGREGAR SPINN (LADING) EN BOTÓN ---//*/
+
+/* This is the space for the spinner to appear, applied to the button */
+
+.spin {
+    padding-left: 2.5em;
+    display: block;
+}
+/* position of the spinner when it appears, you might have to change these values */
+
+.spin .spinner {
+    left: -.6em;
+    top: .4em;
+    width: 2.5em;
+    display: block;
+    position: absolute;
+}
+/* spinner animation */
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* The actual spinner element is a pseudo-element */
+
+.spin .spinner::before {
+    content: "";
+    width: 1.5em;
+    /* Size of the spinner */
+    height: 1.5em;
+    /* Change as desired */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border: solid .35em #FAFAFA;
+    /* Thickness/color of spinner track */
+    border-bottom-color: #555;
+    /* Color of variant spinner piece */
+    animation: .8s linear infinite spinner;
+    /* speed of spinner */
+    transform: translate(-50%, -50%);
+    will-change: transform;
+}
+/* optional, but it will affect the size if changed */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/* CSS PARA DATEPICKER SEMANAL */
+
+.datepicker .datepicker-days tr td.active~td, .datepicker .datepicker-days tr td.active {
+    color: #af1623 !important;
+    background: transparent !important;
+}
+.datepicker .datepicker-days tr:hover td {
+    color: #000;
+    background: #2F45B3;
+    border-radius: 0;
+}

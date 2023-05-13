@@ -1,0 +1,25 @@
+{
+  "name": "jquery-weekpicker",
+  "license": "MIT",
+  "authors": [
+    "Mihai Marica <mihai.marica82@yahoo.com>"
+  ],
+  "description": "jQuery Weekpicker plugin",
+  "homepage": "http://www.mihai-marica.ro",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "weekpicker",
+    "jquery-plugin",
+    "jquery-weekpicker"
+  ],
+  "main": "src/jquery.weekpicker.js",
+  "dependencies": {
+    "jquery": "1"
+  },
+  "ignore": [
+    "npm-debug.log",
+    "bower_components",
+    "node_modules"
+  ]
+}

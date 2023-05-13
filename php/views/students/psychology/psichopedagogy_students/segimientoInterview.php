@@ -1,0 +1,48 @@
+<div class="modal fade" id="seguimientoInterview" tabindex="-1" role="dialog" aria-labelledby="seguimientoInterviewLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role=" document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="seguimientoInterviewLabel">Seguimiento de intervención terapéutica</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>Alumno: <?= $listStudent->student_code ?> | <?= $listStudent->name_student ?></h3>
+                <hr>
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header bg-transparent">
+                            <h3 class="mb-0">Seguimiento</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="timeline timeline-one-side trackingInterview" data-timeline-content="axis" data-timeline-axis-style="dashed">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="modal-footer divAddArchive" id="" style="display:none">
+                <div class="custom-file">
+                    
+                    <label class="btn btn-secondary " id="lblArchiveTracking" for="archiveTtrtacking"><i class="fa-solid fa-folder-plus"></i></label>
+                </div>
+            </div> -->
+            <div class="modal-footer">
+                <input type="hidden" id="id_teacher_tracking" value="<?= $_SESSION['colab'] ?>">
+                <input type="hidden" id="teacher_name_registered_tracking" value="<?= $infoCol->name ?>">
+                    <label for="comentario_seguimientos">Comentario:</label>
+                    <textarea class="form-control" id="comentario_seguimientos" rows="3"></textarea>
+                <input type="file" accept="application/pdf, image/png, image/jpg, image/jpeg" style="display:none" id="archiveTtrtacking" lang="es">
+                <label class="btn btn-secondary " id="lblArchiveTracking" for="archiveTtrtacking"><i class="fa-solid fa-folder-plus"></i></label>
+                <button type="button" class="btn btn-success commentaryTracingInterview" id="">Enviar</button>
+                <button type="button" class="btn btn-primary " data-dismiss="modal">Cerrar</button>
+                <br>
+            </div>
+            <div>
+                <a href="#" id="lblArchivo" style="display:none;" class="badge badge-pill badge-primary"></a>
+            </div>
+        </div>
+    </div>
+</div>
